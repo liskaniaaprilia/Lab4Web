@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Person</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #fd569c;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #ffe1f6;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #fab9e4;
+        }
+
+        .contact-info {
+            background-color: #ffd2ec;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label, input, textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Person</h1>
+    </header>
+    <div class="container">
+        <section id="contact" class="contact">
+
+            <head>
+                <title>Formulir Kontak</title>
+            </head>
+            <body>
+                <form action="proses_formulir.php" method="post">
+                    <label for="nama">Nama :</label>
+                    <input type="text" id="nama" name="nama" required>
+            
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="pesan">Message :</label>
+                    <textarea id="pesan" name="pesan" rows="4" required></textarea>
+            
+                    <input type="submit" value="Submit">
+                </form>
+            </body>     
+            
+        </section>
+    </div>
+</body>
+</html>
